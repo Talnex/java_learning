@@ -1,124 +1,976 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="utf-8">
+
+
+
   
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+
+
+<html class="theme-next muse use-motion" lang>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="珩星">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="珩星">
+<meta property="og:locale" content="default">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="珩星">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/">
+
+
+
+
+
+  <title>珩星</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
-  
-    <link rel="icon" href="/favicon.ico">
-  
-  <link rel="stylesheet" href="/css/typing.css">
-  
-  <link rel="stylesheet" href="/css/font-awesome.min.css">
-  
+
+
+
+
+
+
+
+
 </head>
 
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
   
     
-    <body class="home-body">
-    
   
-      <div id="container" class="container">
-        <div class="home">
-  <div class="content">
-    <div class="profile">
-      <h1 class="nickname">Talnex</h1>
-      <div class="description">
-        <p><p>为人所不为 为己所不欲</p>
-</p>
-      </div>
+
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">珩星</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
     </div>
-    <hr/>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
   </div>
 </div>
-    <ul class="footer-links">
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
       
-        <li>
-	  
-            <a href="/archives/"><span class="fa fa-book"></span></a>
-	  
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
         </li>
       
-        <li>
-	  
-            <a href="https://github.com/Talnex"><span class="fa fa-globe"></span></a>
-	  
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            Tags
+          </a>
         </li>
       
-        <li>
-	  
-            <a href="https://twitter.com/"><span class="fa fa-twitter"></span></a>
-	  
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            Categories
+          </a>
         </li>
       
-        <li>
-	  
-            <a href="https://github.com/"><span class="fa fa-github-alt"></span></a>
-	  
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
         </li>
       
-        <li>
-	  
-            <a href="https://www.youtube.com/"><span class="fa fa-youtube-play"></span></a>
-	  
-        </li>
-      
-        <li>
-	  
-            <a href="https://stackoverflow.com/"><span class="fa fa-stack-overflow"></span></a>
-	  
-        </li>
-      
-        <li>
-	  
-            <a href="https://plus.google.com/"><span class="fa fa-google-plus"></span></a>
-	  
-        </li>
-      
-        <li>
-	  
-            <a href="/atom.xml"><span class="fa fa-rss"></span></a>
-	  
-        </li>
+
       
     </ul>
+  
 
-      </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
       
-  <footer id="footer" class="home-footer footer">
-    <div id="copyright" class="copyright">
-      &copy; 2018 John Doe  Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme &copy; <a href="https://github.com/Talnex" target="_blank">Talnex</a>
 
-      </div>
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/18/我与Mac的365天/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Talnex">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="珩星">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/10/18/我与Mac的365天/" itemprop="url">我与Mac的365天</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-18T18:38:46+08:00">
+                2018-10-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/随笔/" itemprop="url" rel="index">
+                    <span itemprop="name">随笔</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="我与Mac的365天"><a href="#我与Mac的365天" class="headerlink" title="我与Mac的365天"></a>我与Mac的365天</h1><hr>
+<p>2018年11月12日，我最终放弃了购买Surface Book2放弃了在某宝双十一购买mac，老老实实在官网上使用教育优惠购买了一台2017款15英寸Macbook Pro(带bar),时隔一年，重度使用下有很多很多的感受，现在来看买mac也是我做的最正确的选择之一。</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/10/18/我与Mac的365天/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
     </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
       
 
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/11/校园导游系统概述/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Talnex">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="珩星">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/03/11/校园导游系统概述/" itemprop="url">校园导游&地图导航系统概述</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-11T16:37:05+08:00">
+                2018-03-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="校园导游-amp-地图导航系统"><a href="#校园导游-amp-地图导航系统" class="headerlink" title="校园导游&amp;地图导航系统"></a>校园导游&amp;地图导航系统</h1><hr>
+<h2 id="系统功能介绍"><a href="#系统功能介绍" class="headerlink" title="系统功能介绍"></a>系统功能介绍</h2><ul>
+<li>提供景点信息查询并打开介绍页图片</li>
+<li>提供两点间最短路径查询并动态演示</li>
+<li>多个点的最佳路径查询</li>
+<li>模糊搜索景点名称</li>
+<li>遇到复杂路口时显示路口实景</li>
+<li><strong>图形化显示和放大镜功能</strong>提供</li>
+<li><strong>提供两点间所有路径查询动态演示、将所有的路径存入链表中便于后期筛选</strong></li>
+</ul>
+<blockquote>
+<p><strong>本文主要介绍的是整个系统的概述，加粗部分模块包括其代码及算法将另开文详细介绍</strong></p>
+</blockquote>
+<h2 id="技术实现"><a href="#技术实现" class="headerlink" title="技术实现"></a>技术实现</h2><ul>
+<li>文件存储有关图的信息，有邻接矩阵和点的位置坐标文件，还有一个存储景点的名称及对应序号的文件</li>
+<li>每个景点对应唯一的编号，同时会有只用来表示连通关系的中转点，前n个为景点，后m个为中转点，中转点无法被查询，但是在显示路径中会被加入</li>
+<li>点的坐标测定以及介绍页的制作使用photoshop完成</li>
+<li>使用opencv实现可视化操作</li>
+<li>通过点的坐标与连通关系以及地图的比例尺（每像素代表多少米）计算距离</li>
+<li>修改后的深度优先遍历方法寻找两点间所有路径</li>
+<li>dijkstra算法求两点间最短距离</li>
+<li>通过对选出的几个点的最短路径的长度的排列组合，选出其中连接这几个点的最短的路径</li>
+<li>动态演示通过在两点间不断画线不断更新视图实现</li>
+</ul>
+<h2 id="各函数功能介绍"><a href="#各函数功能介绍" class="headerlink" title="各函数功能介绍"></a>各函数功能介绍</h2><h5 id="Dynamic-Show-函数：一条路径的动态演示"><a href="#Dynamic-Show-函数：一条路径的动态演示" class="headerlink" title="Dynamic_Show()函数：一条路径的动态演示"></a>Dynamic_Show()函数：一条路径的动态演示</h5><ul>
+<li>根据一个路径数组动态演示路径，使用OpenCV鼠标事件实现鼠标跟随放大功能。鼠标事件函数在动态演示完成后自动调用，能够让用户看清路径的细节，当演示的路线（红线）到达复杂路口（一般为不容易找到的路）时，自动打开实景图。由于OpenCV没有缓存清除函数，无法像OpenGL之类方便画出动画，我使用了cvWaitKey（）函数作为延时函数，将两点间的路径划分为若干直线，每条路径划分DYNAMIC_NUM条小直线，每画一条小直线就显示一次，这样还意外实现了走大路时动画快，转弯时动画慢的人性化要求，更改其数值可调整动画速度，为了压缩内存，只对原图进行由map1ROI区域控制的显示并只在演示完后进行绘制，而使用缩略图mapshow进行动态绘制，大大减少了内存占用。<br><img src="http://img.blog.csdn.net/20180206181707709?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjA1MDY2MTU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="一条最短路径的动态演示"><h5 id="MOUSE-函数：鼠标跟随放大镜"><a href="#MOUSE-函数：鼠标跟随放大镜" class="headerlink" title="MOUSE()函数：鼠标跟随放大镜"></a>MOUSE()函数：鼠标跟随放大镜</h5></li>
+<li>监听鼠标事件，当鼠标移动时根据xy的值计算并设置map1和mapshow的ROI区域，算法的关键在于判断边界情况，由于绘制的区域为正方形（大小可设置），因此当鼠标移动到边界附近时会出现设置区域超出图形的错误导致程序出错，所以我使用if函数罗列所有边界情况并进行处理于是就实现了鼠标在边界附近时就好像有堵墙一样的效果。<h5 id="Static-Show-函数：多条路径的动态演示"><a href="#Static-Show-函数：多条路径的动态演示" class="headerlink" title="Static_Show()函数：多条路径的动态演示"></a>Static_Show()函数：多条路径的动态演示</h5></li>
+<li>由于Dynamic_Show()函数动态演示用时过长，并且输出所有路径时路径的数量较多，所以使用本函数，以一整条路径为单位进行动态演示，每0.5秒刷新一次，能够检查路径的正确性，使用RNG类为路径赋予随机颜色。<br><img src="http://img.blog.csdn.net/20180206181755225?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjA1MDY2MTU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="两点间所有路径的动态演示"><h5 id="Show-All-函数：显示所有路径、节点、节点编号"><a href="#Show-All-函数：显示所有路径、节点、节点编号" class="headerlink" title="Show_All()函数：显示所有路径、节点、节点编号"></a>Show_All()函数：显示所有路径、节点、节点编号</h5></li>
+<li>通过检测Matrix（邻接矩阵）和Points（点的坐标）来输出一副含有所有路径和所有点以及所有程序内部编号的图，用于检测是否录入数据正确。也是使用了随机颜色。画线使用了line()函数，画圆使用了circle()函数，输出编号使用了putText()函数。<h5 id="DFS-函数：输出两点间所有路径"><a href="#DFS-函数：输出两点间所有路径" class="headerlink" title="DFS()函数：输出两点间所有路径"></a>DFS()函数：输出两点间所有路径</h5></li>
+<li><strong>使用非递归方法，另开一文介绍</strong><h5 id="MH-Search-函数：模糊搜索、查找"><a href="#MH-Search-函数：模糊搜索、查找" class="headerlink" title="MH_Search()函数：模糊搜索、查找"></a>MH_Search()函数：模糊搜索、查找</h5></li>
+<li>模糊搜索函数，考虑到游客可能输入不对或输入不全学校景点的名字，使用这个函数可以自动匹配含有输入字符的景点，同时也支持精确查找。使用goto语句是为了简化函数结构。输入y可确认模糊匹配结果、n可否定结果并继续匹配、e可跳出模糊搜索重新输入使用精确搜索。主要使用了string类型里的函数find（），它可以搜索string类型中是否含有字符串，并返回它出现的次序，如果没有则返回为-1。<h5 id="SearchData-函数：打开介绍页"><a href="#SearchData-函数：打开介绍页" class="headerlink" title="SearchData()函数：打开介绍页"></a>SearchData()函数：打开介绍页</h5></li>
+<li>通过使用模糊搜索，打开对应的介绍页的图片文件，主要是利用了被重载的+运算符的性质，使其可以直接合成一个文件路径。<h5 id="Show-Real-函数：打开复杂路口实景"><a href="#Show-Real-函数：打开复杂路口实景" class="headerlink" title="Show_Real()函数：打开复杂路口实景"></a>Show_Real()函数：打开复杂路口实景</h5></li>
+<li>与SearchData函数类似，区别就是上层函数加了个判断，如果出现有路口实景图的点的编号则调用这个函数，函数有两个参数，通过这两个参数打开预先存放好的实景图片文件。<br><img src="http://img.blog.csdn.net/20180206192448533?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjA1MDY2MTU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="路口实景"><h5 id="MapShow-函数：完整显示校园地图"><a href="#MapShow-函数：完整显示校园地图" class="headerlink" title="MapShow()函数：完整显示校园地图"></a>MapShow()函数：完整显示校园地图</h5></li>
+<li>由于原图过大，因此为用户展示的窗口使用CV_INTER_AREA方式压缩，使用此压缩方式可以有效去除压缩时产生的斜纹，并将程序占用内存由2G多降低到100M左右，同时，设定了一个缩放倍数scale,可以根据不同系统、不同屏幕、不同分辨率进行调整。</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
 
 
-<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/30/第一篇文章/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Talnex">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="珩星">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/11/30/第一篇文章/" itemprop="url">博客的第一篇文章</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-30T20:00:11+08:00">
+                2017-11-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="博客的第一篇文章"><a href="#博客的第一篇文章" class="headerlink" title="博客的第一篇文章"></a>博客的第一篇文章</h1><ul>
+<li>建站目的</li>
+<li>今后打算</li>
+<li>随想</li>
+</ul>
+<hr>
+<h4 id="建站目的"><a href="#建站目的" class="headerlink" title="建站目的"></a>建站目的</h4><p>很小很小的时候就已经与电脑结下不解之缘，如今，随着眼界和技术的提升，渐渐看清了门内的世界，也深知想要达成自己的目标需要长久的努力，二十年的探索，在不同的领域体验，就是为了能够找到自己真正感兴趣的东西，没想到它一直就在我身边，从3岁一直陪到我现在。</p>
+<p>建立本站，每天都至少要发一篇或者修改一点我的github主页或者本博客，博客是为了分享我认为比较好的思路以及自己平时的随想，github上更多是我学习的笔记和历程，我会尽量使用英文（很菜）来写作，在求知的道路上至少还有这么一个地方听我倾诉，与我相伴。</p>
+<h4 id="今后打算"><a href="#今后打算" class="headerlink" title="今后打算"></a>今后打算</h4><p>之前一年无论是软件还是硬件，无论是高层还是底层都有所体会，最终确定了大致方向：以物联网为时代背景，发展软硬结合，偏向于提供高层软件服务。</p>
+<p>当然，对于目前，我的目标就是能够尽快做出项目，尽快入门。</p>
+<h4 id="随想"><a href="#随想" class="headerlink" title="随想"></a>随想</h4><h5 id="座右铭：为人所不为，为己所不欲"><a href="#座右铭：为人所不为，为己所不欲" class="headerlink" title="座右铭：为人所不为，为己所不欲"></a>座右铭：为人所不为，为己所不欲</h5><p>我相信很多人都只会体会到字面意思，很多事情也是这样，只有真正亲历过的人才能与这句话产生共鸣，才能体会到这句话的真正含义。</p>
+<p>人所不为，不是标新立异，而是知道自己该干什么，知道自己该怎么做，在做的过程中摆脱年龄、经验、时间等等的拘束，为自己制定在别人看来根本不可能实现的目标，严格要求自己。以及那些因为胆怯、面子、懒惰而被其他人搁置的有益的事情，很多时候人们并不是不知道该怎么做，而是不去做，在这一方面与“知行合一”的思想比较相似。</p>
+<p>己所不欲，一层含义是对于那些看似很好但对你的计划而言没有什么意义只是浪费时间的事情说不，看起来就没有意义的更不用说了；另一方面，对于自己来说，多去挑战，敢于打破自己的惯性和常规，去尝试格局之外的事情会产生新的思维和感受；还有一个方面是去做自己不想做但是理智告诉你应该做的事，以及自己不想做但有意义的事。</p>
+<h5 id="那么，从今天开始，目标星辰大海，出发！"><a href="#那么，从今天开始，目标星辰大海，出发！" class="headerlink" title="那么，从今天开始，目标星辰大海，出发！"></a>那么，从今天开始，目标星辰大海，出发！</h5><script type="math/tex; mode=display">lim_{1\to+\infty}P(|\frac{1}{n}\sum_i^nX_i-\mu|<\epsilon)=1, i=1,...,n</script>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
 
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+    
+  </section>
+
+  
 
 
-<script src="/js/typing.js"></script>
-<!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+          </div>
+          
 
 
+          
 
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
 
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
 
+      
 
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Talnex</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
 
     </div>
-  </body>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Talnex</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+<div>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<span id="busuanzi_container_site_pv" style="display:none">
+    本站总访问量 <span id="busuanzi_value_site_pv"></span> 次
+    <span class="post-meta-divider">|</span>
+</span>
+<span id="busuanzi_container_site_uv" style="display:none">
+    有<span id="busuanzi_value_site_uv"></span>人看过我的博客啦
+</span>
+</div>
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
 </html>
