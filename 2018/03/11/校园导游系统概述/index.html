@@ -89,7 +89,7 @@
 <meta property="og:image" content="http://img.blog.csdn.net/20180206181707709?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjA1MDY2MTU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20180206181755225?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjA1MDY2MTU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20180206192448533?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjA1MDY2MTU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:updated_time" content="2018-03-11T08:45:46.863Z">
+<meta property="og:updated_time" content="2019-06-07T14:27:43.234Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="校园导游&amp;地图导航系统概述">
 <meta name="twitter:description" content="校园导游&amp;amp;地图导航系统 系统功能介绍 提供景点信息查询并打开介绍页图片 提供两点间最短路径查询并动态演示 多个点的最佳路径查询 模糊搜索景点名称 遇到复杂路口时显示路口实景 图形化显示和放大镜功能提供 提供两点间所有路径查询动态演示、将所有的路径存入链表中便于后期筛选   本文主要介绍的是整个系统的概述，加粗部分模块包括其代码及算法将另开文详细介绍  技术实现 文件存储有关图的信息，有邻接">
@@ -350,9 +350,8 @@
 <li>修改后的深度优先遍历方法寻找两点间所有路径</li>
 <li>dijkstra算法求两点间最短距离</li>
 <li>通过对选出的几个点的最短路径的长度的排列组合，选出其中连接这几个点的最短的路径</li>
-<li>动态演示通过在两点间不断画线不断更新视图实现</li>
-</ul>
-<h2 id="各函数功能介绍"><a href="#各函数功能介绍" class="headerlink" title="各函数功能介绍"></a>各函数功能介绍</h2><h5 id="Dynamic-Show-函数：一条路径的动态演示"><a href="#Dynamic-Show-函数：一条路径的动态演示" class="headerlink" title="Dynamic_Show()函数：一条路径的动态演示"></a>Dynamic_Show()函数：一条路径的动态演示</h5><ul>
+<li>动态演示通过在两点间不断画线不断更新视图实现<a id="more"></a>
+<h2 id="各函数功能介绍"><a href="#各函数功能介绍" class="headerlink" title="各函数功能介绍"></a>各函数功能介绍</h2><h5 id="Dynamic-Show-函数：一条路径的动态演示"><a href="#Dynamic-Show-函数：一条路径的动态演示" class="headerlink" title="Dynamic_Show()函数：一条路径的动态演示"></a>Dynamic_Show()函数：一条路径的动态演示</h5></li>
 <li>根据一个路径数组动态演示路径，使用OpenCV鼠标事件实现鼠标跟随放大功能。鼠标事件函数在动态演示完成后自动调用，能够让用户看清路径的细节，当演示的路线（红线）到达复杂路口（一般为不容易找到的路）时，自动打开实景图。由于OpenCV没有缓存清除函数，无法像OpenGL之类方便画出动画，我使用了cvWaitKey（）函数作为延时函数，将两点间的路径划分为若干直线，每条路径划分DYNAMIC_NUM条小直线，每画一条小直线就显示一次，这样还意外实现了走大路时动画快，转弯时动画慢的人性化要求，更改其数值可调整动画速度，为了压缩内存，只对原图进行由map1ROI区域控制的显示并只在演示完后进行绘制，而使用缩略图mapshow进行动态绘制，大大减少了内存占用。<br><img src="http://img.blog.csdn.net/20180206181707709?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjA1MDY2MTU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="一条最短路径的动态演示"><h5 id="MOUSE-函数：鼠标跟随放大镜"><a href="#MOUSE-函数：鼠标跟随放大镜" class="headerlink" title="MOUSE()函数：鼠标跟随放大镜"></a>MOUSE()函数：鼠标跟随放大镜</h5></li>
 <li>监听鼠标事件，当鼠标移动时根据xy的值计算并设置map1和mapshow的ROI区域，算法的关键在于判断边界情况，由于绘制的区域为正方形（大小可设置），因此当鼠标移动到边界附近时会出现设置区域超出图形的错误导致程序出错，所以我使用if函数罗列所有边界情况并进行处理于是就实现了鼠标在边界附近时就好像有堵墙一样的效果。<h5 id="Static-Show-函数：多条路径的动态演示"><a href="#Static-Show-函数：多条路径的动态演示" class="headerlink" title="Static_Show()函数：多条路径的动态演示"></a>Static_Show()函数：多条路径的动态演示</h5></li>
 <li>由于Dynamic_Show()函数动态演示用时过长，并且输出所有路径时路径的数量较多，所以使用本函数，以一整条路径为单位进行动态演示，每0.5秒刷新一次，能够检查路径的正确性，使用RNG类为路径赋予随机颜色。<br><img src="http://img.blog.csdn.net/20180206181755225?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjA1MDY2MTU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="两点间所有路径的动态演示"><h5 id="Show-All-函数：显示所有路径、节点、节点编号"><a href="#Show-All-函数：显示所有路径、节点、节点编号" class="headerlink" title="Show_All()函数：显示所有路径、节点、节点编号"></a>Show_All()函数：显示所有路径、节点、节点编号</h5></li>
@@ -498,7 +497,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -689,7 +688,24 @@
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
 
 
 
